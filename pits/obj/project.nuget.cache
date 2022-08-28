@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3NJSdWvmi25G5OU+kRMDAmtnscNMKLdD/PDTmN8GnxkQOJ2Z2CKOP9fMOwU3jMPSnx46unspbDVtx6VkYjIwAA==",
+  "dgSpecHash": "L7ExSAjIdrBKjPq6vWivW4c3URbUoiC/bU8qB6m9JVLgsU9QRFZAmo/pnmTVI7d8FnOi4nQtZ/7d2dPuuY/dWA==",
   "success": true,
-  "projectFilePath": "F:\\DotNet\\pits\\pits\\pits.csproj",
+  "projectFilePath": "F:\\DotNet\\new_pits\\pits\\pits.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rohee\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.8\\microsoft.aspnetcore.mvc.razor.extensions.6.0.8.nupkg.sha512",

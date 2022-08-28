@@ -14,7 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>( x=>
 
 var app = builder.Build();
 
-app.Services.CreateScope().ServiceProvider.GetService<DbContext>().Database.Migrate();
+app.Services.CreateScope().ServiceProvider.GetService<DbContext>()!.Database.Migrate();
 //app.Services.CreateScope.GetService
 
 // Configure the HTTP request pipeline.
@@ -34,7 +34,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=NewLayout}/{id?}");
 
 app.Run();
 

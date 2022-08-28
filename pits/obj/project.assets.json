@@ -1669,11 +1669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DotNet\\pits\\pits\\pits.csproj",
+      "projectUniqueName": "F:\\DotNet\\new_pits\\pits\\pits.csproj",
       "projectName": "pits",
-      "projectPath": "F:\\DotNet\\pits\\pits\\pits.csproj",
+      "projectPath": "F:\\DotNet\\new_pits\\pits\\pits.csproj",
       "packagesPath": "C:\\Users\\rohee\\.nuget\\packages\\",
-      "outputPath": "F:\\DotNet\\pits\\pits\\obj\\",
+      "outputPath": "F:\\DotNet\\new_pits\\pits\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rohee\\AppData\\Roaming\\NuGet\\NuGet.Config",
