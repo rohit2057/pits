@@ -1,0 +1,25 @@
+﻿<html>
+<body>
+
+    <h2>update Forms</h2>
+
+    <form  method="post" asp-controller="Author" asp-action="Update">
+        <label for="id"> Id</label><br>
+        <input type="text" value="@Model.Id" id="id" name="id"><br>
+
+        <label for="name"> name:</label><br>
+        <input type="text"  value="@Model.Name" id="name" name="name" ><br>
+
+        <label for="title">title</label><br>
+        <input type="text" value="@Model.Title" id="title" name="title" ><br>
+
+        <label for="writer">Writer</label><br>
+        <input type="text" value="@Model.Writer" id="writer" name="writer"><br><br />
+
+        <input type="submit" value="update" class="btn btn-primary">
+    </form>
+
+    
+
+</body>
+</html>
