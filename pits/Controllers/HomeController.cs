@@ -13,11 +13,6 @@ namespace pits.Controllers
         {
             _logger = logger;
         }
-       
-        public IActionResult Index()
-        {
-            return View();
-        }
 
      
 
@@ -38,16 +33,6 @@ namespace pits.Controllers
         //    //ViewBag.Greet = "hello";
         //    return View(viewModel);
         //}
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Try()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
