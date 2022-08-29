@@ -1,9 +1,13 @@
-﻿<html>
+﻿@{
+    Layout = "MyLayout";
+}
+@*<html>
 <body>
 
     <h2>update Forms</h2>
 
     <form  method="post" asp-controller="Author" asp-action="Update">
+
         <label for="id"> Id</label><br>
         <input type="text" value="@Model.Id" id="id" name="id"><br>
 
@@ -18,8 +22,46 @@
 
         <input type="submit" value="update" class="btn btn-primary">
     </form>
+   </body>
+</html>
+*@
 
-    
 
+ <html>
+  <body>
+  <div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <form class="forms-sample" method="post" asp-controller="Author" asp-action="Update">
+                            <div class="form-group">
+                                <label for="id">ID</label>
+                                <input type="text" class="form-control" value="@Model.Id" id="id" name="id" placeholder="ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" value="@Model.Name" id="name" name="name" placeholder="Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" value="@Model.Title" name="title" id="title" placeholder="title">
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="writer">Writer</label>
+                                <input type="text" class="form-control" value="@Model.Writer" name="writer" id="writer" placeholder="writer">
+                            </div>
+
+                           <input type="submit" value="update" class="btn btn-primary">
+                            <button class="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>

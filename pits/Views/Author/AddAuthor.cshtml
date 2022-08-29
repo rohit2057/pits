@@ -1,10 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-   
+﻿@{
+    Layout = "MyLayout";
 }
-<form class="form-inline" asp-controller="Author" asp-action="AddAuthor" method="post">
+
+@*<form class="form-inline" asp-controller="Author" asp-action="AddAuthor" method="post">
     <div class="form-group">
         <label for="exampleInputID">Id</label>
         <input type="text" class="form-control" id="id" name="id" />
@@ -25,4 +23,46 @@
 
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form>*@
+
+
+
+<html>
+<body>
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="forms-sample" method="post" asp-controller="Author" asp-action="AddAuthor">
+                                <div class="form-group">
+                                    <label for="id">ID</label>
+                                    <input type="text" class="form-control" id="id" name="id" placeholder="ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" class="form-control" name="title" id="title" placeholder="title">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="writer">Writer</label>
+                                    <input type="text" class="form-control" name="writer" id="writer" placeholder="writer">
+                                </div>
+
+                               @* <input type="submit" value="update" class="btn btn-primary">*@
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
