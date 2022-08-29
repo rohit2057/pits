@@ -23,8 +23,14 @@ namespace pits.Migrations
 
             modelBuilder.Entity("pits.Models.Author", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Isbn")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -40,7 +46,7 @@ namespace pits.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Author", "public");
+                    b.ToTable("copy");
                 });
 #pragma warning restore 612, 618
         }

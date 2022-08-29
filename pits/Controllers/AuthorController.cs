@@ -51,7 +51,7 @@ namespace pits.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Delete(string id)
+        public IActionResult Delete(int id)
         {
             Author auth = Context.copy.Find(id);
             Context.Entry(auth).State = EntityState.Deleted;
@@ -60,9 +60,9 @@ namespace pits.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Update(string id)
+        public IActionResult Update(int id)
         {
-            Author authors = Context.copy.Find(id);
+            var authors = Context.copy.Find(id);
             return View(authors);
 
         }
@@ -70,7 +70,8 @@ namespace pits.Controllers
         [HttpPost]
         public IActionResult Update(Author a)
         {
-            Context.Entry(a).State = EntityState.Modified;
+            //Context.Entry(a).State = EntityState.Modified;
+            Context.copy.Update(a);
             Context.SaveChanges();
             return RedirectToAction("Index");
 
