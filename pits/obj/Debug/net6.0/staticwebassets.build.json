@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DFUKyhyZ1W/ggK3hsRBvZY5TLRgIDgWOWJwGHzgfTt0=",
+  "Hash": "2T6h+uCTg/Jhutvw62F5DhQdYkOcbPmhJNdRykYLLd8=",
   "Source": "pits",
   "BasePath": "_content/pits",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Roboto\\Roboto-Thin.woff2"
     },
     {
+      "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\image\\892eec61-c1f5-4889-8131-7569d2cebfb2-IMG_2498.JPG",
+      "SourceId": "pits",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNet\\new_pits\\pits\\wwwroot\\",
+      "BasePath": "_content/pits",
+      "RelativePath": "image/892eec61-c1f5-4889-8131-7569d2cebfb2-IMG_2498.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\892eec61-c1f5-4889-8131-7569d2cebfb2-IMG_2498.JPG"
+    },
+    {
       "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\js\\site.js",
       "SourceId": "pits",
       "SourceType": "Discovered",
@@ -1052,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\khasi.jpg",
+      "SourceId": "pits",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNet\\new_pits\\pits\\wwwroot\\",
+      "BasePath": "_content/pits",
+      "RelativePath": "khasi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\khasi.jpg"
     },
     {
       "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

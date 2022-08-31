@@ -9,6 +9,7 @@ namespace pits.data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Author> copy { get; set; }
+        public DbSet<ProfileM> image { get; set; }
         //public object Author { get; internal set; }
     }
 }

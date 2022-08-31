@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using pits.data;
 using pits.Models;
+using pits.ViewModel;
 using System.Net;
 
 namespace pits.Controllers
@@ -9,10 +10,12 @@ namespace pits.Controllers
     public class AuthorController : Controller
     {
         private ApplicationDbContext Context { get; }
+        private readonly IWebHostEnvironment WebHostEnvironment;
 
-        public AuthorController(ApplicationDbContext _context)
+        public AuthorController(ApplicationDbContext _context , IWebHostEnvironment webHostEnvironment)
         {
             this.Context = _context;
+            WebHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -76,5 +79,60 @@ namespace pits.Controllers
             return RedirectToAction("Index");
 
         }
+
+        public IActionResult Profile()
+        {
+
+
+            return View(Context.image.ToList());
+        }
+
+
+        public IActionResult AddProfile() {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddProfile(AuthorVM p)
+        {
+            string StringFileUrl = Upload(p);
+
+            var data = new ProfileM
+            {
+                Name = p.Name,
+                Email = p.Email,
+                Phone = p.Phone,
+                Address = p.Address,
+                Image = StringFileUrl,
+
+            };
+            Context.image.Add(data);
+            Context.SaveChanges();
+
+            return RedirectToAction("Profile");
+            
+        }
+
+        public string Upload(AuthorVM img)
+        {
+            string filename = "";
+            if(img.Image != null)
+            {
+                string uploadDir = Path.Combine(WebHostEnvironment.WebRootPath, "image");
+                filename = Guid.NewGuid().ToString() + "-" + img.Image.FileName;
+                string filePath = Path.Combine(uploadDir, filename);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.Image.CopyTo(fileStream);
+                }
+            }
+            return filename;
+        }
+
+       
+
+
+
+
+
     }
 }
