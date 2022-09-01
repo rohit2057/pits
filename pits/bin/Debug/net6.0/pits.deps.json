@@ -35,6 +35,7 @@
       "pits/1.0.0": {
         "dependencies": {
           "AspNetCoreHero.ToastNotification": "1.1.0",
+          "BCrypt.Net-Next": "4.0.3",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.8",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
@@ -353,6 +354,17 @@
         "compile": {
           "lib/net5.0/AspNetCoreHero.ToastNotification.Views.dll": {},
           "lib/net5.0/AspNetCoreHero.ToastNotification.dll": {}
+        }
+      },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2490,6 +2502,13 @@
       "sha512": "sha512-bCAYeD+b2pRelcOrHMNtYGVtRq+J2u+SAaND33v3u6qZCatHf4XSZOEPhBfCKJAjMGvsggtPKaNFnrv4VhwOfA==",
       "path": "aspnetcorehero.toastnotification/1.1.0",
       "hashPath": "aspnetcorehero.toastnotification.1.1.0.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "C3w6gAMkJcQqxRnd4LYngPyak7G4Q4LXa+sjtEFwHPcbVki3bIJpIHzbwClID24hivVv2YjjtxjQrPHTgRp5Hg==",
+  "dgSpecHash": "dKEts2EcZhVAN79gCj5WOFVdurejheVFJNS1fxLtB/+qtR5SQV1RQn29WWGQEwk48xOqKWKkpcw0ugH1/OsFDw==",
   "success": true,
   "projectFilePath": "F:\\DotNet\\new_pits\\pits\\pits.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rohee\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
+    "C:\\Users\\rohee\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.8\\microsoft.aspnetcore.mvc.razor.extensions.6.0.8.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.8\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.8.nupkg.sha512",

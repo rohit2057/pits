@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using pits.data;
@@ -11,9 +12,10 @@ using pits.data;
 namespace pits.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220901120855_User")]
+    partial class User
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,32 +50,6 @@ namespace pits.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("copy");
-                });
-
-            modelBuilder.Entity("pits.Models.Message", b =>
-                {
-                    b.Property<long>("MId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("MId"));
-
-                    b.Property<string>("Email")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Messages")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("text");
-
-                    b.Property<long?>("Phone")
-                        .IsRequired()
-                        .HasColumnType("bigint");
-
-                    b.HasKey("MId");
-
-                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("pits.Models.ProfileM", b =>

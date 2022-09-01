@@ -1,0 +1,69 @@
+﻿@model IEnumerable<pits.Models.Message>
+
+@{
+    Layout = "MyLayout";
+}
+
+@foreach (var msg in Model)
+{
+
+    <div class="container">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Name</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    @msg.Name
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    @msg.Email
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Phone</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    @msg.Phone
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Message</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    @msg.Messages
+                                </div>
+                            </div>
+                            <hr>
+@*                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-primary text-white" asp-controller="Author" asp-action="Message">Add New</a>
+                                  
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+}

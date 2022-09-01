@@ -10,6 +10,8 @@ namespace pits.data
 
         public DbSet<Author> copy { get; set; }
         public DbSet<ProfileM> image { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Message> Messages { get; set; }
         //public object Author { get; internal set; }
     }
 }

@@ -136,8 +136,17 @@ namespace pits.Controllers
             return filename;
         }
 
-       
 
+        [HttpGet]
+        public IActionResult Message()
+        {
+            //var viewModel = new Author()
+            //{
+            //    Id = Context.copy.Id,
+            //    Name = Context.copy.Name,
+            //};
+            return View(Context.Messages.ToList());
+        }
 
 
 
