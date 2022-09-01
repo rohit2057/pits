@@ -125,6 +125,9 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="~/assets/js/dashboard.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+    @RenderSection("Scripts", required: false)
     <!-- End custom js for this page-->
 </body>
 </html>

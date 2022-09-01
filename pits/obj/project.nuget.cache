@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L7ExSAjIdrBKjPq6vWivW4c3URbUoiC/bU8qB6m9JVLgsU9QRFZAmo/pnmTVI7d8FnOi4nQtZ/7d2dPuuY/dWA==",
+  "dgSpecHash": "C3w6gAMkJcQqxRnd4LYngPyak7G4Q4LXa+sjtEFwHPcbVki3bIJpIHzbwClID24hivVv2YjjtxjQrPHTgRp5Hg==",
   "success": true,
   "projectFilePath": "F:\\DotNet\\new_pits\\pits\\pits.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rohee\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.8\\microsoft.aspnetcore.mvc.razor.extensions.6.0.8.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.8\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.8.nupkg.sha512",
@@ -29,6 +30,7 @@
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\rohee\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\npgsql\\6.0.6\\npgsql.6.0.6.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.6\\npgsql.entityframeworkcore.postgresql.6.0.6.nupkg.sha512",
     "C:\\Users\\rohee\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

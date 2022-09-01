@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using pits.data;
 using pits.Models;
@@ -11,11 +12,15 @@ namespace pits.Controllers
     {
         private ApplicationDbContext Context { get; }
         private readonly IWebHostEnvironment WebHostEnvironment;
+        private readonly INotyfService _notyf;
+        
 
-        public AuthorController(ApplicationDbContext _context , IWebHostEnvironment webHostEnvironment)
+        public AuthorController(ApplicationDbContext _context , IWebHostEnvironment webHostEnvironment, INotyfService notyf)
         {
             this.Context = _context;
             WebHostEnvironment = webHostEnvironment;
+                _notyf = notyf;
+            
         }
 
         [HttpGet]
@@ -50,6 +55,7 @@ namespace pits.Controllers
 
             Context.copy.Add(a);
             Context.SaveChanges();
+            _notyf.Success("Success Notification");
 
             return RedirectToAction("Index");
         }
@@ -66,6 +72,7 @@ namespace pits.Controllers
         public IActionResult Update(int id)
         {
             var authors = Context.copy.Find(id);
+
             return View(authors);
 
         }
@@ -76,6 +83,7 @@ namespace pits.Controllers
             //Context.Entry(a).State = EntityState.Modified;
             Context.copy.Update(a);
             Context.SaveChanges();
+            _notyf.Success("Update Notification");
             return RedirectToAction("Index");
 
         }

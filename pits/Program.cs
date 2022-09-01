@@ -1,9 +1,14 @@
+using AspNetCoreHero.ToastNotification;
 using Microsoft.EntityFrameworkCore;
 using pits.data;
+
+//services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<DbContext, ApplicationDbContext>();
 
+
+builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();

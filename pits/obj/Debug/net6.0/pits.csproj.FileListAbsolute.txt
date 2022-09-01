@@ -712,3 +712,6 @@ F:\DotNet\new_pits\pits\obj\Debug\net6.0\refint\pits.dll
 F:\DotNet\new_pits\pits\obj\Debug\net6.0\pits.pdb
 F:\DotNet\new_pits\pits\obj\Debug\net6.0\pits.genruntimeconfig.cache
 F:\DotNet\new_pits\pits\obj\Debug\net6.0\ref\pits.dll
+F:\DotNet\new_pits\pits\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.Views.dll
+F:\DotNet\new_pits\pits\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.dll
+F:\DotNet\new_pits\pits\bin\Debug\net6.0\Newtonsoft.Json.dll
