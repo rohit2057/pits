@@ -1,11 +1,9 @@
-﻿@model IEnumerable<pits.Models.ProfileM>
+﻿@*@model IEnumerable<pits.Models.ProfileM>*@
+@model pits.Models.ProfileM
 
 @{
     Layout = "MyLayout";
 }
-
-@foreach (var img in Model)
-{
 
  <div class="container">
     <div class="main-body">
@@ -14,11 +12,9 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="~/image/@img.Image" alt="Admin" class="rounded-circle" width="160" height="170">
+                            <img src="~/image/@Model.Image" alt="Admin" class="rounded-circle" width="160" height="170">
                             <div class="mt-3">
-                                    <h4>@img.Name</h4>
-                                
-                               
+                                    <h4>@Model.Name</h4>
                             </div>
                         </div>
                     </div>
@@ -33,7 +29,7 @@
                                 <h6 class="mb-0">Email</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                               @img.Email
+                               @Model.Email
                             </div>
                         </div>
                         <hr>
@@ -42,7 +38,7 @@
                                 <h6 class="mb-0">Phone</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                @img.Phone
+                                @Model.Phone
                             </div>
                         </div>
 
@@ -52,15 +48,13 @@
                                 <h6 class="mb-0">Address</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                @img.Address
+                                @Model.Address
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-12">
                                 <a class="btn btn-primary text-white" asp-controller="Author" asp-action="AddProfile" >Add New</a>
-                                @*<a class="btn btn-success text-white">Edit</a>*@
-                                @*<a asp-controller="Profile" asp-action="AddProfile" class="btn btn-primary">Add New</a>*@
                             </div>
                         </div>
                     </div>
@@ -73,4 +67,3 @@
 
     </div>
  </div>
- }

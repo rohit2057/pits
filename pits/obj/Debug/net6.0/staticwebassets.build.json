@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tn8rcTLRYb8cq3Mr7c0/AhJWc0+yBI9X0cywzQokr2E=",
+  "Hash": "2jGtf7h7Z911+X2XAUHKi5F1hgVUHaj0w0wWJK1tP6U=",
   "Source": "pits",
   "BasePath": "_content/pits",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\image\\14004006-778c-4455-8231-f78c98fd85f7-dhit.JPG",
+      "SourceId": "pits",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNet\\new_pits\\pits\\wwwroot\\",
+      "BasePath": "_content/pits",
+      "RelativePath": "image/14004006-778c-4455-8231-f78c98fd85f7-dhit.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\14004006-778c-4455-8231-f78c98fd85f7-dhit.JPG"
+    },
+    {
+      "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\image\\60f7c00f-bb1b-4e5f-96d8-531460dc2cb8-26757128_386867521736863_1041171270353542549_o.jpg",
+      "SourceId": "pits",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNet\\new_pits\\pits\\wwwroot\\",
+      "BasePath": "_content/pits",
+      "RelativePath": "image/60f7c00f-bb1b-4e5f-96d8-531460dc2cb8-26757128_386867521736863_1041171270353542549_o.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\60f7c00f-bb1b-4e5f-96d8-531460dc2cb8-26757128_386867521736863_1041171270353542549_o.jpg"
     },
     {
       "Identity": "F:\\DotNet\\new_pits\\pits\\wwwroot\\image\\892eec61-c1f5-4889-8131-7569d2cebfb2-IMG_2498.JPG",

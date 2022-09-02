@@ -5,12 +5,15 @@ using pits.data;
 using pits.Models;
 using pits.ViewModel;
 using System.Net;
+using System.Xml.Linq;
 
 namespace pits.Controllers
 {
     public class AuthorController : Controller
     {
         private ApplicationDbContext Context { get; }
+        public int PId { get; private set; }
+
         private readonly IWebHostEnvironment WebHostEnvironment;
         private readonly INotyfService _notyf;
         
@@ -91,8 +94,13 @@ namespace pits.Controllers
         public IActionResult Profile()
         {
 
-
-            return View(Context.image.ToList());
+            //select last_value("Pid") over(order by created_at desc) as name from Profile;
+            int max = Context.image.Max(p => p.Pid);
+            //var User = Context.image.Find(max);
+            //var authors = Context.copy.Find(max);
+            //var max = Context.copy.OrderByDescending(p => p.Pid).FirstOrDefault().ID;
+            return View(Context.image.Find(max));
+            //return View(max);
         }
 
 

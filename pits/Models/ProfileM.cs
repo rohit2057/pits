@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using pits.Models;
+
 namespace pits.Models
 {
     public class ProfileM
