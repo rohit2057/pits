@@ -26,23 +26,6 @@ namespace pits.Controllers
 
      
 
-        //[HttpPost]
-        //public IActionResult Index(Book b)
-        //{
-        //    var viewModel = new Book()
-        //    {
-        //        Id = b.Id,
-        //        Name = b.Name,
-        //        Author = b.Author
-        //    };
-
-        //    this.Context.copy.Add(viewModel);
-        //    this.Context.SaveChanges();
-
-        //    //return View(viewModel);
-        //    //ViewBag.Greet = "hello";
-        //    return View(viewModel);
-        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

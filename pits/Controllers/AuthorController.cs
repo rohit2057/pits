@@ -29,16 +29,11 @@ namespace pits.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            //var viewModel = new Author()
-            //{
-            //    Id = Context.copy.Id,
-            //    Name = Context.copy.Name,
-            //};
+
             return View(Context.copy.ToList());
         }
 
-        //[BindProperty]
-        //public copy copy { get; set; }
+  
 
         public IActionResult AddAuthor()
         {
@@ -47,14 +42,7 @@ namespace pits.Controllers
         [HttpPost]
         public IActionResult AddAuthor(Author a)
         {
-            //var viewmodel = new Author()
-            //{
-            //    Id = a.Id,
-            //    Name = a.Name,
-            //    Title = a.Title,
-            //    Writer = a.Writer,
-
-            //};
+   
 
             Context.copy.Add(a);
             Context.SaveChanges();
@@ -68,7 +56,7 @@ namespace pits.Controllers
             Author auth = Context.copy.Find(id);
             Context.Entry(auth).State = EntityState.Deleted;
             Context.SaveChanges();
-
+            _notyf.Success("Successfully Deleted");
             return RedirectToAction("Index");
         }
 
@@ -83,7 +71,7 @@ namespace pits.Controllers
         [HttpPost]
         public IActionResult Update(Author a)
         {
-            //Context.Entry(a).State = EntityState.Modified;
+            
             Context.copy.Update(a);
             Context.SaveChanges();
             _notyf.Success("successfully updated");
@@ -97,7 +85,7 @@ namespace pits.Controllers
             
             int max = Context.image.Max(p => p.Pid);
             return View(Context.image.Find(max));
-            //return View(max);
+           
         }
 
 
@@ -145,17 +133,14 @@ namespace pits.Controllers
         [HttpGet]
         public IActionResult Message()
         {
-            //var viewModel = new Author()
-            //{
-            //    Id = Context.copy.Id,
-            //    Name = Context.copy.Name,
-            //};
+       
             return View(Context.Messages.ToList());
         }
 
         [HttpPost]
         public IActionResult Login(User user)
         {
+            //var UserData = Context.Users.FirstOrDefault(u => u.Email == user.Email);
             var data = Context.Users.ToList();
             foreach (var item in data)
             {
@@ -169,16 +154,16 @@ namespace pits.Controllers
                     }
                     else
                     {
-                        RedirectToAction("https://localhost:7133/");
+                        Redirect("https://localhost:7133/");
                     }
                 }
                 else
                 {
-                    return RedirectToAction("https://localhost:7133/");
+                    return Redirect("https://localhost:7133/");
                 }
              
             }
-            return RedirectToAction("https://localhost:7133/");
+            return Redirect("https://localhost:7133/");
 
         }
 
