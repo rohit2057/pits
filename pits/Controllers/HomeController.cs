@@ -89,5 +89,13 @@ namespace pits.Controllers
 
             return RedirectToAction("Dashboard");
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+     
+
     }
 }

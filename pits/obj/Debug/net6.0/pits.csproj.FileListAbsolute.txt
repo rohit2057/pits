@@ -716,3 +716,4 @@ F:\DotNet\new_pits\pits\bin\Debug\net6.0\Newtonsoft.Json.dll
 F:\DotNet\new_pits\pits\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 F:\DotNet\new_pits\pits\obj\Debug\net6.0\scopedcss\projectbundle\pits.bundle.scp.css
 F:\DotNet\new_pits\pits\bin\Debug\net6.0\BCrypt.Net-Next.dll
+F:\DotNet\new_pits\pits\bin\Debug\net6.0\libman.json

@@ -6,54 +6,56 @@
 }
 
 
-
+<link href="~/lib/datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<style>
+    .dataTables_info {
+        display: none;
+    }
+</style>
 <div class="card">
-    
     <div class="card-body">
         <a asp-controller="Author" asp-action="AddAuthor" class="btn btn-primary">Add New</a>
           <div class="row">
             <div class="col-12">
                 <div class="table-responsive">
-<table class="table table-stripped mt-2">
-    <thead class="bg-black">
-        <tr class="text-black">
-            <th>ID</th>
-            <th> Name</th>
-            <th> Title</th>
-            <th> Author</th>
-            <th> Isbn</th>
-            <th>Button</th>
-        </tr>
-    </thead>
+                    <table id="AuthorTable" class="table table-stripped mt-2">
+  <thead class="bg-black">
+   <tr class="text-black">
+        <th>ID</th>
+        <th> Name</th>
+        <th> Title</th>
+        <th> Author</th>
+        <th> Isbn</th>
+        <th>Action</th>
+    </tr>
+   </thead>
   <tbody>
-
-       
-    @foreach (var item in Model)
+      @foreach (var item in Model)
     {
         <tr>
             <td>@count</td>
-            @*<td>@Html.DisplayFor(modelItem => item.Id)</td>*@
             <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Title)</td>
             <td>@Html.DisplayFor(modelItem => item.Writer)</td>
             <td>@Html.DisplayFor(modelItem => item.Isbn)</td>
             
-            <td class="content-center">
-                
+            <td class="content-center">                
                 <a asp-area="" asp-controller="Author"  asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"> Delete</a>
                 <a asp-area="" asp-controller="Author"  asp-action="Update" asp-route-id="@item.Id" class="btn btn-success"> Update</a>
-
                 @{count++;}
             </td>
         </tr>
-
-    
-    
- }
-            </tbody>
-        </table>
+    }
+    </tbody>
+  </table>
        </div>
     </div>
    </div>
   </div>
 </div>
+@section Scripts
+    {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/Author.js"></script>
+}

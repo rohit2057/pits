@@ -58,7 +58,7 @@ namespace pits.Controllers
 
             Context.copy.Add(a);
             Context.SaveChanges();
-            _notyf.Success("Success Notification");
+            _notyf.Success("Successfully added");
 
             return RedirectToAction("Index");
         }
@@ -86,7 +86,7 @@ namespace pits.Controllers
             //Context.Entry(a).State = EntityState.Modified;
             Context.copy.Update(a);
             Context.SaveChanges();
-            _notyf.Success("Update Notification");
+            _notyf.Success("successfully updated");
             return RedirectToAction("Index");
 
         }
@@ -94,11 +94,8 @@ namespace pits.Controllers
         public IActionResult Profile()
         {
 
-            //select last_value("Pid") over(order by created_at desc) as name from Profile;
+            
             int max = Context.image.Max(p => p.Pid);
-            //var User = Context.image.Find(max);
-            //var authors = Context.copy.Find(max);
-            //var max = Context.copy.OrderByDescending(p => p.Pid).FirstOrDefault().ID;
             return View(Context.image.Find(max));
             //return View(max);
         }
@@ -156,6 +153,34 @@ namespace pits.Controllers
             return View(Context.Messages.ToList());
         }
 
+        [HttpPost]
+        public IActionResult Login(User user)
+        {
+            var data = Context.Users.ToList();
+            foreach (var item in data)
+            {
+                if (user.Email == item.Email)
+                {
+                    bool verified =(user.Password == item.Password);
+                    if (verified == true)
+                    {
+                        _notyf.Success("Login success");
+                        return Redirect("https://localhost:7133/Home/NewLayout");
+                    }
+                    else
+                    {
+                        RedirectToAction("https://localhost:7133/");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("https://localhost:7133/");
+                }
+             
+            }
+            return RedirectToAction("https://localhost:7133/");
+
+        }
 
 
 

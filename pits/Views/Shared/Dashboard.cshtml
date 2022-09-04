@@ -121,7 +121,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
 
-                    <form id="contactForm" class="forms-sample" method="post" asp-controller="Home" asp-action="Message">
+                    <form id="contactForm" class="forms-sample" method="post" asp-controller="Author" asp-action="Login">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" name="Name" data-sb-validations="required" />
@@ -157,7 +157,7 @@
     <!-- Contact Section-->
     <section class="page-section" id="login">
 
-        *<div class="container">
+        <div class="container">
             <!-- Contact Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
 
@@ -165,16 +165,17 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
 
-                    <form id="contactForm">
+                    
+                    <form id="contactForm" class="forms-sample" method="post" asp-controller="Author" asp-action="Login">
 
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" data-sb-validations="required,email" />
+                            <input class="form-control" id="email" type="email" name="Email" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
 
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="password" type="password" data-sb-validations="required,password" />
+                            <input class="form-control" id="password" type="password" name="Password" data-sb-validations="required,password" />
                             <label for="password">password</label>
 
                         </div>
